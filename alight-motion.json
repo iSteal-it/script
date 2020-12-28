@@ -1,0 +1,68 @@
+var obj = JSON.parse($response.body);
+
+
+
+obj= {
+
+  "result": {
+
+    "result": "success",
+
+    "msTime": 1609152869678,
+
+    "accountCreatedMillis": null,
+
+    "licenses": [
+
+      {
+
+        "benefits": [
+
+          "RemoveWatermark",
+
+          "MemberEffects",
+
+          "ProjectPackageSharing",
+
+          "FutureMemberFeatures",
+
+          "AdvancedEasing"
+
+        ],
+
+        "type": "subscription",
+
+        "store": "apple_app_store",
+
+        "autoRenewing": true,
+
+        "orderNumber": "iSteal",
+
+        "productId": "com.alightcreative.motion.sub.yearly",
+
+        "period": "1y",
+
+        "label": null,
+
+        "details": null,
+
+        "expires": 1609389411000,
+
+        "valid": true,
+
+        "linkStatus": "linked-nologin"
+
+      }
+
+    ],
+
+    "warnings": []
+
+  }
+
+}
+
+
+
+$done({body: JSON.stringify(obj)});
+
