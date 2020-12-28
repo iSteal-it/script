@@ -8,42 +8,8 @@ allow-udp-proxy = true
 host = 127.0.0.1
 [Remote Rule]
 
-# 订阅规则
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Liby.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
-# BlockOTA
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/BlockOTA.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
-# Antirevoke
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Antirevoke.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
-# > TikTok
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/TikTok.list,🎵𝐓𝐢𝐤𝐓𝐨𝐤
-# > Youtube
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTube.list,🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞
-# > Netflix
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Netflix.list,🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱
-# > PronHub
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Pornhub.list,🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛
-# Telegram
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Telegram.list,📱𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
-# > PayPal
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/PayPal.list,💳𝐏𝐚𝐲𝐏𝐚𝐥
-# > Outlook、Gmail
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Mail.list,🔰𝐏𝐫𝐨𝐱𝐲
-# > GoogleDrive
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/GoogleDrive.list,🔰𝐏𝐫𝐨𝐱𝐲
-# Speedtest
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list,🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭
-
-# >Unlock NeteaseMusic
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/UnlockNeteaseMusic.list,🎧𝐍𝐞𝐭𝐞𝐚𝐬𝐞𝐌𝐮𝐬𝐢𝐜
-
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list,🍎𝐀𝐩𝐩𝐥𝐞
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list,🍎𝐀𝐩𝐩𝐥𝐞
-
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/AsianMedia.list,🎯𝐃𝐢𝐫𝐞𝐜𝐭
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/GlobalMedia.list,🔰𝐏𝐫𝐨𝐱𝐲
-
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Domestic.list,🎯𝐃𝐢𝐫𝐞𝐜𝐭
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Global.list,🔰𝐏𝐫𝐨𝐱𝐲
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list,
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list,
 
 [URL Rewrite]
 
@@ -58,16 +24,15 @@ https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Global.list,
 enable = true
 
 [Remote Rewrite]
-#订阅重写 去广告 by eHpo
-# 格式：订阅url，别名(可选)
 https://raw.githubusercontent.com/eHpo1/Rules/master/Loon/Rewrite.conf,eHpo
 https://raw.githubusercontent.com/nzw9314/Loon/master/Q-Search_All_in_one.conf,Q-Search_All_in_one
 [Script]
-# 本地脚本
 enable = true
 
 [Remote Script]
-https://raw.githubusercontent.com/nzw9314/Loon/master/Script.conf
+
+https://raw.githubusercontent.com/iSteal-it/script/main/Test
+
 [MITM]
 enable = true
 hostname = *.googlevideo.com.bak
