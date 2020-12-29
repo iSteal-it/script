@@ -185,8 +185,8 @@ enable = true
 #Subscription rewrite Go to ads by eHpo 
 # Format: subscription url, alias (optional)
 
-https://raw.githubusercontent.com/eHpo1/Rules/master/Loon/Rewrite.conf,eHpo
-https://raw.githubusercontent.com/nzw9314/Loon/master/Q-Search_All_in_one.conf,Q-Search_All_in_one
+https://raw.githubusercontent.com/iSteal-it/script/main/rewriteRules,eHpo
+
 [Script]
 
 # Local script
