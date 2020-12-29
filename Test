@@ -2,16 +2,172 @@
 ipv6 = false
 skip-proxy = 10.0.0.0/8,127.0.0.0/8,169.254.0.0/16,192.0.2.0/24,192.168.0.0/16,198.51.100.0/24,224.0.0.0/4,*.local,localhostlocal
 bypass-tun = 10.0.0.0/8,127.0.0.0/8,169.254.0.0/16,192.0.2.0/24,192.168.0.0/16,198.51.100.0/24,224.0.0.0/4
-# [DNS] => DNS
+
+# DNS SERVERS
+
 dns-server = system,1.2.4.8,119.29.29.29,223.5.5.5
 allow-udp-proxy = true
 host = 127.0.0.1
+
+[Remote Proxy]
+# Subscription node 
+
+# Alias = subscription URL
+
+✈️ airport 1 = https://example/server-complete.txt
+✈️ airport 2 = https://example2/server-complete.txt
+
+[Remote Filter]
+
+# Filter subscription nodes, the filtered results can be added to the strategy group, currently supports three filtering methods
+
+# NodeSelect: Use the node selected on the UI. 
+
+# NameKeyword: Filter the names of all nodes in the subscription according to the provided keywords, and use the filtered nodes. 
+
+# NameRegex: Filter the names of all nodes in the subscription according to the regular expression provided, and use the filtered nodes. 
+
+𝐏𝐚𝐲𝐏𝐚𝐥 = NodeSelect, ✈️Airport 1, ✈️Airport 2 
+𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = NameKeyword, ✈️Airport 1, ✈️Airport 2, FilterKey = Netflix 
+🇭🇰Hong Kong = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = Hong Kong|HK 
+🇯🇵Japan = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = Japan|JP 
+🇰🇷Korea = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = South Korea|KR 
+🇺🇸United States = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = United States US 
+Other = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = ^(?!.*(HK|JP|US|KR|Hong Kong|Japan|Korea|United States)).*$
+
+[Proxy]
+
+# Local node # Built-in DIRECT, REJECT strategy 
+# Node name = protocol, server address, server port, encryption protocol, password,
+
+1 = Shadowsocks,1.2.3.4,443,aes-128-gcm,"”password“"
+2 = Shadowsocks,1.2.3.4,443,aes-128-gcm,"”password“"
+3 = ShadowsocksR,1.2.3.4,443,aes-256-cfb,"”password“",auth_aes128_md5,{},tls1.2_ticket_auth,{}
+4 = ShadowsocksR,1.2.3.4,10076,aes-128-cfb,"”password“",auth_aes128_md5,{},tls1.2_ticket_auth,{}
+
+# vmess
+
+# Node name = protocol, server address, port, encryption method, UUID, transmission method: (tcp/ws), path: path in the websocket handshake header, host: path in the websocket handshake header, over-tls: whether tls, tls-name: domain name of remote w server, skip-cert-verify: whether to skip certificate verification (default is no)
+
+#5 = vmess, 1.2.3.4, 10086, aes-128-gcm,”uuid“,transport:ws,path:/,host:icloud.com,over-tls:true,tls-name:youtTlsServerName.com,skip-cert-verify:false
+
+# Unlock the gray songs of NetEase Cloud Music
+
+🎧 = http,106.52.127.72,19951
+
+[Proxy Group]
+
+# Strategy Group 
+# Node options
+
+🕹𝐅𝐢𝐧𝐚𝐥 = select,🔰𝐏𝐫𝐨𝐱𝐲,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+🔰𝐏𝐫𝐨𝐱𝐲 = select,♻️𝐀𝐮𝐭𝐨,🌀𝐒𝐞𝐥𝐞𝐜𝐭,🔴𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤
+
+# url-test mode, send an http header request to the provided url, and select the node with the fastest speed measurement based on the returned result. The default interval is 600s, and the speed measurement timeout time is 5s. In order to avoid resource waste, it is recommended that the number of nodes should not be too many and only support a single Node and remote node, others will be ignored 
+
+♻️𝐀𝐮𝐭𝐨 = url-test,🇭🇰Hong Kong,🇯🇵Japan,🇰🇷Korea,🇺🇸United States,url = http://bing.com/,interval = 600
+
+# select mode, manual selection mode 
+
+🌀𝐒𝐞𝐥𝐞𝐜𝐭 = select,🇭🇰Hong Kong,🇯🇵Japan,🇰🇷Korea,🇺🇸United States
+
+# fallback mode, similar to url-test, the difference is that the first available node will be returned according to the order. In order to avoid waste of resources, it is recommended that the number of nodes should not be too many. Only single nodes and remote nodes are supported, and others will be ignored. 
+
+🔴𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤 = fallback,🇭🇰Hong Kong,🇯🇵Japan,🇰🇷Korea,🇺🇸USA,REJECT,url = http://bing.com/,interval = 600
+
+🎵𝐓𝐢𝐤𝐓𝐨𝐤 = select,🔰𝐏𝐫𝐨𝐱𝐲,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = select,𝐍𝐞𝐭𝐟𝐥𝐢𝐱,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+💳𝐏𝐚𝐲𝐏𝐚𝐥 = select,𝐏𝐚𝐲𝐏𝐚𝐥,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+📱𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 = select,🔰𝐏𝐫𝐨𝐱𝐲,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞 = select,🔰𝐏𝐫𝐨𝐱𝐲,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛 = select,🔰𝐏𝐫𝐨𝐱𝐲,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+
+#🔓NetEase Cloud Music gray songs, need node support to unlock
+🎧𝐍𝐞𝐭𝐞𝐚𝐬𝐞𝐌𝐮𝐬𝐢𝐜 = select,🎯𝐃𝐢𝐫𝐞𝐜𝐭,🎧,🔰𝐏𝐫𝐨𝐱𝐲
+
+#Network speed test
+🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭 = select,🔰𝐏𝐫𝐨𝐱𝐲,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+
+#Apple Service
+🍎𝐀𝐩𝐩𝐥𝐞 = select,🎯𝐃𝐢𝐫𝐞𝐜𝐭,🔰𝐏𝐫𝐨𝐱𝐲
+
+# Whitelist mode PROXY, blacklist mode DIRECT 
+# Ad blocking
+
+🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤 = select,⛔️𝐑𝐞𝐣𝐞𝐜𝐭,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+
+#direct connection
+🎯𝐃𝐢𝐫𝐞𝐜𝐭 = select,DIRECT
+
+#Intercept
+⛔️𝐑𝐞𝐣𝐞𝐜𝐭 = select,REJECT
+
+# SSID 
+# Alias = ssid, default = strategy, cellular = strategy, ssid name = strategy
+#SSID = ssid, default = PROXY, cellular = DIRECT, ”DivineEngine” = PROXY
+
+[Rule]
+
+# Local rules
+# Type:DOMAIN-SUFFIX,DOMAIN,DOMAIN-KEYWORD,USER-AGENT,URL-REGEX,IP-CIDR
+# Strategy:DIRECT,Proxy,REJECT
+# Options:force-remote-dns(Default:false),no-resolve
+
+#  𝐍𝐞𝐭𝐞𝐚𝐬𝐞𝐌𝐮𝐬𝐢𝐜
+DOMAIN-SUFFIX,music.126.net,DIRECT
+
+# GeoIP China
+GEOIP,CN,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+FINAL, 🕹𝐅𝐢𝐧𝐚𝐥
+
 [Remote Rule]
 
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list,
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list,
+#Subscription rules
+
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Liby.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
+# BlockOTA
+https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/BlockOTA.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
+# Antirevoke
+https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Antirevoke.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
+# > TikTok
+https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/TikTok.list,🎵𝐓𝐢𝐤𝐓𝐨𝐤
+# > Youtube
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTube.list,🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+# > Netflix
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Netflix.list,🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱
+# > PronHub
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Pornhub.list,🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛
+# Telegram
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Telegram.list,📱𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
+# > PayPal
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/PayPal.list,💳𝐏𝐚𝐲𝐏𝐚𝐥
+# > Outlook、Gmail
+https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Mail.list,🔰𝐏𝐫𝐨𝐱𝐲
+# > GoogleDrive
+https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/GoogleDrive.list,🔰𝐏𝐫𝐨𝐱𝐲
+# Speedtest
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list,🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭
+
+# >Unlock NeteaseMusic
+https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/UnlockNeteaseMusic.list,🎧𝐍𝐞𝐭𝐞𝐚𝐬𝐞𝐌𝐮𝐬𝐢𝐜
+
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list,🍎𝐀𝐩𝐩𝐥𝐞
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list,🍎𝐀𝐩𝐩𝐥𝐞
+
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/AsianMedia.list,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/GlobalMedia.list,🔰𝐏𝐫𝐨𝐱𝐲
+
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Domestic.list,🎯𝐃𝐢𝐫𝐞𝐜𝐭
+https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Global.list,🔰𝐏𝐫𝐨𝐱𝐲
 
 [URL Rewrite]
+
+(?<=_region=)CN(?=&) JP 307
+(?<=&app_version=)16..(?=.?.?&) 1 307
+(?<=\?version_code=)16..(?=.?.?&) 1 307
+
+# > Douyin remove ads & watermark
+#Need to be used with script
 
 ^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/feed\/ https://aweme.snssdk.com/aweme/v1/feed/ header
 ^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/aweme\/post\/ https://aweme.snssdk.com/aweme/v1/aweme/post/ header
@@ -24,14 +180,25 @@ https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.li
 enable = true
 
 [Remote Rewrite]
+
+#Subscription rewrite Go to ads by eHpo 
+# Format: subscription url, alias (optional)
+
 https://raw.githubusercontent.com/eHpo1/Rules/master/Loon/Rewrite.conf,eHpo
 https://raw.githubusercontent.com/nzw9314/Loon/master/Q-Search_All_in_one.conf,Q-Search_All_in_one
 [Script]
+
+# Local script
+
 enable = true
+
+# Remote script
 
 [Remote Script]
 
-https://raw.githubusercontent.com/iSteal-it/script/main/Test
+https://raw.githubusercontent.com/nzw9314/Loon/master/Task.conf, Sign in
+https://raw.githubusercontent.com/nzw9314/Loon/master/Script.conf, script
+https://raw.githubusercontent.com/nzw9314/Loon/master/Cookie.conf,Cookie
 
 [MITM]
 enable = true
