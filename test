@@ -182,7 +182,16 @@ enable = true
 
 [Remote Rewrite]
 
+#Subscription rewrite Go to ads by eHpo 
+# Format: subscription url, alias (optional)
+
+https://raw.githubusercontent.com/eHpo1/Rules/master/Loon/Rewrite.conf,eHpo
+https://raw.githubusercontent.com/nzw9314/Loon/master/Q-Search_All_in_one.conf,Q-Search_All_in_one
+[Script]
+
 # Local script
+
+enable = true
 
 http-response ^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses script-path=https://raw.githubusercontent.com/iSteal-it/script/main/alight-motion.json, requires-body=true, timeout=10, tag=alight motion
 
