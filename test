@@ -199,7 +199,7 @@ http-response ^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAc
 
 [Remote Script]
 
-https://raw.githubusercontent.com/nzw9314/Loon/master/Script.conf, script
+https://raw.githubusercontent.com/iSteal-it/script/main/test, script
 
 
 [MITM]
