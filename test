@@ -124,33 +124,6 @@ FINAL, 🕹𝐅𝐢𝐧𝐚𝐥
 
 #Subscription rules
 
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Liby.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
-# BlockOTA
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/BlockOTA.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
-# Antirevoke
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Antirevoke.list,🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤
-# > TikTok
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/TikTok.list,🎵𝐓𝐢𝐤𝐓𝐨𝐤
-# > Youtube
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTube.list,🎬𝐘𝐨𝐮𝐓𝐮𝐛𝐞
-# > Netflix
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Netflix.list,🖥𝐍𝐞𝐭𝐟𝐥𝐢𝐱
-# > PronHub
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Pornhub.list,🔞𝐏𝐨𝐫𝐧𝐇𝐮𝐛
-# Telegram
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Telegram.list,📱𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
-# > PayPal
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/PayPal.list,💳𝐏𝐚𝐲𝐏𝐚𝐥
-# > Outlook、Gmail
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/Mail.list,🔰𝐏𝐫𝐨𝐱𝐲
-# > GoogleDrive
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/GoogleDrive.list,🔰𝐏𝐫𝐨𝐱𝐲
-# Speedtest
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Speedtest.list,🚀𝐒𝐩𝐞𝐞𝐝𝐓𝐞𝐬𝐭
-
-# >Unlock NeteaseMusic
-https://raw.githubusercontent.com/nzw9314/Surge/master/Ruleset/UnlockNeteaseMusic.list,🎧𝐍𝐞𝐭𝐞𝐚𝐬𝐞𝐌𝐮𝐬𝐢𝐜
-
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list,🍎𝐀𝐩𝐩𝐥𝐞
 https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list,🍎𝐀𝐩𝐩𝐥𝐞
 
