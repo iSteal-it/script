@@ -104,27 +104,18 @@ FINAL, 🕹𝐅𝐢𝐧𝐚𝐥
 
 [Remote Rule]
 
-#Subscription rules
-
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_CDN.list,🍎𝐀𝐩𝐩𝐥𝐞
-https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Apple_API.list,🍎𝐀𝐩𝐩𝐥𝐞
+https://raw.githubusercontent.com/iSteal-it/script/main/appleCDN.list,🍎𝐀𝐩𝐩𝐥𝐞
+https://raw.githubusercontent.com/iSteal-it/script/main/apple_API.list,🍎𝐀𝐩𝐩𝐥𝐞
 
 [Remote Rewrite]
-
-#Subscription rewrite Go to ads by eHpo 
-# Format: subscription url, alias (optional)
 
 https://raw.githubusercontent.com/iSteal-it/script/main/rewriteRules,eHpo
 
 [Script]
 
-# Local script
-
 enable = true
 
 http-response ^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses script-path=https://raw.githubusercontent.com/iSteal-it/script/main/alight-motion.json, requires-body=true, timeout=10, tag=alight motion
-
-# Remote script
 
 [Remote Script]
 
