@@ -7,17 +7,10 @@ dns-server = system,1.2.4.8,119.29.29.29,223.5.5.5
 allow-udp-proxy = true
 host = 127.0.0.1
 
-[Proxy]
-
-1 = Shadowsocks,1.2.3.4,443,aes-128-gcm,"”password“"
-2 = Shadowsocks,1.2.3.4,443,aes-128-gcm,"”password“"
-3 = ShadowsocksR,1.2.3.4,443,aes-256-cfb,"”password“",auth_aes128_md5,{},tls1.2_ticket_auth,{}
-4 = ShadowsocksR,1.2.3.4,10076,aes-128-cfb,"”password“",auth_aes128_md5,{},tls1.2_ticket_auth,{}
-
 [Remote Rule]
 
-https://raw.githubusercontent.com/iSteal-it/script/main/appleCDN.list,🍎𝐀𝐩𝐩𝐥𝐞
-https://raw.githubusercontent.com/iSteal-it/script/main/apple_API.list,🍎𝐀𝐩𝐩𝐥𝐞
+https://raw.githubusercontent.com/iSteal-it/script/main/appleCDN.list,
+https://raw.githubusercontent.com/iSteal-it/script/main/apple_API.list,
 
 [Remote Rewrite]
 
