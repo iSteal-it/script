@@ -50,29 +50,6 @@ Other = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = ^(?!.*(HK|JP|US
 
 🎧 = http,106.52.127.72,19951
 
-[Proxy Group]
-
-# Strategy Group 
-# Node options
-
-🕹𝐅𝐢𝐧𝐚𝐥 = select,🔰𝐏𝐫𝐨𝐱𝐲,🎯𝐃𝐢𝐫𝐞𝐜𝐭
-🔰𝐏𝐫𝐨𝐱𝐲 = select,♻️𝐀𝐮𝐭𝐨,🌀𝐒𝐞𝐥𝐞𝐜𝐭,🔴𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤
-
-# url-test mode, send an http header request to the provided url, and select the node with the fastest speed measurement based on the returned result. The default interval is 600s, and the speed measurement timeout time is 5s. In order to avoid resource waste, it is recommended that the number of nodes should not be too many and only support a single Node and remote node, others will be ignored 
-
-♻️𝐀𝐮𝐭𝐨 = url-test,🇭🇰Hong Kong,🇯🇵Japan,🇰🇷Korea,🇺🇸United States,url = http://bing.com/,interval = 600
-
-# select mode, manual selection mode 
-
-🌀𝐒𝐞𝐥𝐞𝐜𝐭 = select,🇭🇰Hong Kong,🇯🇵Japan,🇰🇷Korea,🇺🇸United States
-
-# fallback mode, similar to url-test, the difference is that the first available node will be returned according to the order. In order to avoid waste of resources, it is recommended that the number of nodes should not be too many. Only single nodes and remote nodes are supported, and others will be ignored. 
-
-🔴𝐅𝐚𝐥𝐥𝐛𝐚𝐜𝐤 = fallback,🇭🇰Hong Kong,🇯🇵Japan,🇰🇷Korea,🇺🇸USA,REJECT,url = http://bing.com/,interval = 600
-
-#Apple Service
-🍎𝐀𝐩𝐩𝐥𝐞 = select,🎯𝐃𝐢𝐫𝐞𝐜𝐭,🔰𝐏𝐫𝐨𝐱𝐲
-
 [Remote Rule]
 
 https://raw.githubusercontent.com/iSteal-it/script/main/appleCDN.list,🍎𝐀𝐩𝐩𝐥𝐞
