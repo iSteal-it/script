@@ -3,16 +3,11 @@ ipv6 = false
 skip-proxy = 10.0.0.0/8,127.0.0.0/8,169.254.0.0/16,192.0.2.0/24,192.168.0.0/16,198.51.100.0/24,224.0.0.0/4,*.local,localhostlocal
 bypass-tun = 10.0.0.0/8,127.0.0.0/8,169.254.0.0/16,192.0.2.0/24,192.168.0.0/16,198.51.100.0/24,224.0.0.0/4
 
-# DNS SERVERS
-
 dns-server = system,1.2.4.8,119.29.29.29,223.5.5.5
 allow-udp-proxy = true
 host = 127.0.0.1
 
 [Remote Proxy]
-# Subscription node 
-
-# Alias = subscription URL
 
 ✈️ airport 1 = https://example/server-complete.txt
 ✈️ airport 2 = https://example2/server-complete.txt
