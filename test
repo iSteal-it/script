@@ -73,35 +73,6 @@ Other = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = ^(?!.*(HK|JP|US
 #Apple Service
 🍎𝐀𝐩𝐩𝐥𝐞 = select,🎯𝐃𝐢𝐫𝐞𝐜𝐭,🔰𝐏𝐫𝐨𝐱𝐲
 
-# Whitelist mode PROXY, blacklist mode DIRECT 
-# Ad blocking
-
-🚫𝐀𝐝 𝐁𝐥𝐨𝐜𝐤 = select,⛔️𝐑𝐞𝐣𝐞𝐜𝐭,🎯𝐃𝐢𝐫𝐞𝐜𝐭
-
-#direct connection
-🎯𝐃𝐢𝐫𝐞𝐜𝐭 = select,DIRECT
-
-#Intercept
-⛔️𝐑𝐞𝐣𝐞𝐜𝐭 = select,REJECT
-
-# SSID 
-# Alias = ssid, default = strategy, cellular = strategy, ssid name = strategy
-#SSID = ssid, default = PROXY, cellular = DIRECT, ”DivineEngine” = PROXY
-
-[Rule]
-
-# Local rules
-# Type:DOMAIN-SUFFIX,DOMAIN,DOMAIN-KEYWORD,USER-AGENT,URL-REGEX,IP-CIDR
-# Strategy:DIRECT,Proxy,REJECT
-# Options:force-remote-dns(Default:false),no-resolve
-
-#  𝐍𝐞𝐭𝐞𝐚𝐬𝐞𝐌𝐮𝐬𝐢𝐜
-DOMAIN-SUFFIX,music.126.net,DIRECT
-
-# GeoIP China
-GEOIP,CN,🎯𝐃𝐢𝐫𝐞𝐜𝐭
-FINAL, 🕹𝐅𝐢𝐧𝐚𝐥
-
 [Remote Rule]
 
 https://raw.githubusercontent.com/iSteal-it/script/main/appleCDN.list,🍎𝐀𝐩𝐩𝐥𝐞
