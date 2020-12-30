@@ -32,23 +32,10 @@ Other = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = ^(?!.*(HK|JP|US
 
 [Proxy]
 
-# Local node # Built-in DIRECT, REJECT strategy 
-# Node name = protocol, server address, server port, encryption protocol, password,
-
 1 = Shadowsocks,1.2.3.4,443,aes-128-gcm,"”password“"
 2 = Shadowsocks,1.2.3.4,443,aes-128-gcm,"”password“"
 3 = ShadowsocksR,1.2.3.4,443,aes-256-cfb,"”password“",auth_aes128_md5,{},tls1.2_ticket_auth,{}
 4 = ShadowsocksR,1.2.3.4,10076,aes-128-cfb,"”password“",auth_aes128_md5,{},tls1.2_ticket_auth,{}
-
-# vmess
-
-# Node name = protocol, server address, port, encryption method, UUID, transmission method: (tcp/ws), path: path in the websocket handshake header, host: path in the websocket handshake header, over-tls: whether tls, tls-name: domain name of remote w server, skip-cert-verify: whether to skip certificate verification (default is no)
-
-#5 = vmess, 1.2.3.4, 10086, aes-128-gcm,”uuid“,transport:ws,path:/,host:icloud.com,over-tls:true,tls-name:youtTlsServerName.com,skip-cert-verify:false
-
-# Unlock the gray songs of NetEase Cloud Music
-
-🎧 = http,106.52.127.72,19951
 
 [Remote Rule]
 
