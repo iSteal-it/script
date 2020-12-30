@@ -20,6 +20,8 @@ https://raw.githubusercontent.com/iSteal-it/script/main/rewriteRules,eHpo
 
 enable = true
 
+http-response ^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses script-path=https://raw.githubusercontent.com/iSteal-it/script/main/alight-motion.json, requires-body=true, timeout=10, tag=alight motion
+
 [Remote Script]
 
 https://raw.githubusercontent.com/iSteal-it/script/main/master, script
