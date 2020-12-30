@@ -464,7 +464,7 @@ http-response ^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$ requires-body=1,ma
 http-response ^https:\/\/owa\.videoshowiosglobalserver\.com\/zone\/.+\/iosPayClient\/(payVerify|imeiVerify) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/videoshow.vip.js,script-update-interval=0
 
 # > alight motion
-http-response ^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses script-path=https://raw.githubusercontent.com/iSteal-it/script/main/alight-motion.json, requires-body=true, timeout=10, tag=alight motion
+http-response ^https:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/alight-motion.json,script-update-interval=0
 
 # > BuyHack
 http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,script-update-interval=0
