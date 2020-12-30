@@ -7,29 +7,6 @@ dns-server = system,1.2.4.8,119.29.29.29,223.5.5.5
 allow-udp-proxy = true
 host = 127.0.0.1
 
-[Remote Proxy]
-
-✈️ airport 1 = https://example/server-complete.txt
-✈️ airport 2 = https://example2/server-complete.txt
-
-[Remote Filter]
-
-# Filter subscription nodes, the filtered results can be added to the strategy group, currently supports three filtering methods
-
-# NodeSelect: Use the node selected on the UI. 
-
-# NameKeyword: Filter the names of all nodes in the subscription according to the provided keywords, and use the filtered nodes. 
-
-# NameRegex: Filter the names of all nodes in the subscription according to the regular expression provided, and use the filtered nodes. 
-
-𝐏𝐚𝐲𝐏𝐚𝐥 = NodeSelect, ✈️Airport 1, ✈️Airport 2 
-𝐍𝐞𝐭𝐟𝐥𝐢𝐱 = NameKeyword, ✈️Airport 1, ✈️Airport 2, FilterKey = Netflix 
-🇭🇰Hong Kong = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = Hong Kong|HK 
-🇯🇵Japan = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = Japan|JP 
-🇰🇷Korea = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = South Korea|KR 
-🇺🇸United States = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = United States US 
-Other = NameRegex, ✈️Airport 1, ✈️Airport 2, FilterKey = ^(?!.*(HK|JP|US|KR|Hong Kong|Japan|Korea|United States)).*$
-
 [Proxy]
 
 1 = Shadowsocks,1.2.3.4,443,aes-128-gcm,"”password“"
