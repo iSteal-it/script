@@ -1,0 +1,32 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "code": 200,
+  "data": {
+    "hasFreedTrialProds": [
+    ],
+    "hasPurchasedProds": [
+      "All_Tempo_Access_Yearly_sub"
+    ],
+    "list": [
+      {
+        "autoRenewProductId": "All_Tempo_Access_Yearly_sub",
+        "autoRenewStatus": true,
+        "endTime": 1909744617000,
+        "isTrialPeriod": false,
+        "orderId": "200000919457578",
+        "orderStatus": 1,
+        "originalOrderId": "200000919457578",
+        "productId": "All_Tempo_Access_Yearly_sub",
+        "productType": 3,
+        "sign": "a2568568fdd91b00b2446d0c26ff0463",
+        "startTime": 1609485417000
+      }
+    ],
+    "systemDate": 1609485424717
+  },
+  "message": "successful",
+  "success": true
+};
+
+$done({body: JSON.stringify(obj)});
