@@ -1,0 +1,13 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "state_code": 0,
+  "has_valid_subscription": True,
+  "is_valid_device": True,
+"expiration_date_ms" : 4197755192000,
+
+"subscription_product_id" : "com.kinemaster.sub.annual.ia2",
+
+  "is_table_resettable": false
+  }
+$done({body: JSON.stringify(obj)});
