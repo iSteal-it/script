@@ -552,7 +552,7 @@ localhost = 127.0.0.1
 
 
 [Script]
-Kinemaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Kinemaster.json,pattern=^https:\/\/api-kinemaster-assetstore\.kinemasters.com\/v2\.1\/product\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
+Kinemaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Kinemaster.json,pattern=^https:\/\/api-kinemaster-assetstore\.kinemasters\.com\/v2\.1\/product\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 
 [MITM]
 hostname = api-kinemaster-assetstore.kinemasters.com
