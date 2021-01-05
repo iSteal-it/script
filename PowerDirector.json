@@ -1,0 +1,42 @@
+var obj = JSON.parse($response.body);
+
+obj= {
+  "status": "OK",
+  "data": {
+    "status": 0,
+    "environment": "Production",
+    "receipt": {
+      "request_date_ms": "1609524247112",
+      "bundle_id": "com.cyberlink.ios.powerdirector"
+    },
+    "latest_receipt_info": [
+      {
+        "quantity": "1",
+        "product_id": "annual_subscription_201912",
+        "transaction_id": "200000919867743",
+        "original_transaction_id": "200000919867743",
+        "purchase_date": "2021-01-01 18:04:01 Etc/GMT",
+        "purchase_date_ms": "1609524241000",
+        "purchase_date_pst": "2021-01-01 10:04:01 America/Los_Angeles",
+        "original_purchase_date": "2021-01-01 18:04:01 Etc/GMT",
+        "original_purchase_date_ms": "1609524241000",
+        "original_purchase_date_pst": "2021-01-01 10:04:01 America/Los_Angeles",
+        "expires_date": "2021-01-08 18:04:01 Etc/GMT",
+        "expires_date_ms": "1710129041000",
+        "web_order_line_item_id": "200000357616344",
+        "is_trial_period": "false",
+        "is_in_intro_offer_period": "false"
+      }
+    ],
+    "pending_renewal_info": [
+      {
+        "auto_renew_product_id": "annual_subscription_201912",
+        "original_transaction_id": "200000919867743",
+        "product_id": "annual_subscription_201912",
+        "auto_renew_status": "1"
+      }
+    ]
+  }
+}
+
+$done({body: JSON.stringify(obj)});
