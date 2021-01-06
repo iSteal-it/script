@@ -553,7 +553,8 @@ localhost = 127.0.0.1
 
 
 [Script]
-VSCO = http-response ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/vsco.js,tag=VSCO
+VSCO = type=http-response, script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/vsco.js, pattern=^https:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=true,timeout=10,enable=true
+
 
 [MITM]
 hostname = vsco.co
