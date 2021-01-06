@@ -553,7 +553,7 @@ localhost = 127.0.0.1
 
 
 [Script]
-VSCO = type=http-response, script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/vsco.js, pattern=^https:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=true,timeout=10,enable=true
+VSCO = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vsco.json, pattern=^https:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=true,timeout=10,enable=true
 Kinemaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Kinemaster.json,pattern=^https:\/\/api-kinemaster-assetstore\.(nexstreaming|kinemasters)\.com\/.+\/product\/verifyReceipt$,max-size=131072,requires-body=true,timeout=10,enable=true
 alight motion = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/alight-motion.json,pattern=^https?:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
 
