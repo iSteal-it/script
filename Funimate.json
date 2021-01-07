@@ -1,0 +1,13 @@
+var obj = JSON.parse($response.body);
+obj={
+  "data": {
+    "subscribe_info": {
+      "enabled": true,
+      "is_valid": true,
+      "subscribed": true
+    }
+  },
+  "error": null,
+  "success": true
+}
+$done({body: JSON.stringify(obj)});
