@@ -5,7 +5,6 @@ obj= {
   "data" : {
     "user" : {
       "total_out_likes" : 2,
-      "username" : "kakashi3060",
       "blocked_me" : false,
       "is_embassador" : false,
       "app_install_date" : 1610054092,
@@ -390,11 +389,9 @@ obj= {
       "permission_notification_follow" : true,
       "permission_notification_mention" : true,
       "permission_notification_sound" : true,
-      "profile_picture_url" : "https://cf.funimate.com/default_profile_picture.png",
       "total_views" : 0,
       "is_pro_user" : true,
       "permission_notification_comment" : true,
-      "email" : "kakashi@telegram.3060",
       "video_privacy" : 1,
       "lit_post_count" : 0,
       "permission_notification_challenge" : true,
