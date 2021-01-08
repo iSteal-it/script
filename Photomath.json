@@ -1,4 +1,6 @@
-{
+var obj = JSON.parse($response.body);
+
+obj={
   "status": "ok",
   "content": {
     "userId": "5ff8ad06e3981375695d0cad",
@@ -47,4 +49,5 @@
     "region": "MP",
     "country": "IN"
   }
-}
+};
+$done({body: JSON.stringify(obj)});
