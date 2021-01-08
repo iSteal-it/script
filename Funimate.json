@@ -1,407 +1,410 @@
 var obj = JSON.parse($response.body);
-obj={
-  "data": {
-    "user": {
-      "app_install_date": 1559248519,
-      "badges": {
-        "groups": [
+
+obj= {
+  "error" : null,
+  "data" : {
+    "user" : {
+      "total_out_likes" : 2,
+      "username" : "kakashi3060",
+      "blocked_me" : false,
+      "is_embassador" : false,
+      "app_install_date" : 1610054092,
+      "chat_privacy" : 1,
+      "total_in_likes" : 0,
+      "user_id" : 76678141,
+      "badges" : {
+        "num_of_captured_badges" : 0,
+        "groups" : [
           {
-            "current": 0,
-            "items": [
+            "current" : 0,
+            "items" : [
               {
-                "description": null,
-                "distance": 1,
-                "name": "1 Featured",
-                "target": 1
+                "target" : 1,
+                "description" : null,
+                "distance" : 1,
+                "name" : "1 Featured"
               },
               {
-                "description": null,
-                "distance": 5,
-                "name": "5 Featured",
-                "target": 5
+                "target" : 5,
+                "description" : null,
+                "distance" : 5,
+                "name" : "5 Featured"
               },
               {
-                "description": null,
-                "distance": 10,
-                "name": "10 Featured",
-                "target": 10
+                "target" : 10,
+                "description" : null,
+                "distance" : 10,
+                "name" : "10 Featured"
               },
               {
-                "description": null,
-                "distance": 20,
-                "name": "20 Featured",
-                "target": 20
+                "target" : 20,
+                "description" : null,
+                "distance" : 20,
+                "name" : "20 Featured"
               },
               {
-                "description": null,
-                "distance": 35,
-                "name": "35 Featured",
-                "target": 35
+                "target" : 35,
+                "description" : null,
+                "distance" : 35,
+                "name" : "35 Featured"
               },
               {
-                "description": null,
-                "distance": 50,
-                "name": "50 Featured",
-                "target": 50
+                "target" : 50,
+                "description" : null,
+                "distance" : 50,
+                "name" : "50 Featured"
               },
               {
-                "description": null,
-                "distance": 75,
-                "name": "75 Featured",
-                "target": 75
+                "target" : 75,
+                "description" : null,
+                "distance" : 75,
+                "name" : "75 Featured"
               },
               {
-                "description": null,
-                "distance": 100,
-                "name": "100 Featured",
-                "target": 100
+                "target" : 100,
+                "description" : null,
+                "distance" : 100,
+                "name" : "100 Featured"
               }
             ],
-            "name": "Featured 💎",
-            "next_level_text": "Get 1 more funimate featured for your next star "
+            "name" : "Featured 💎",
+            "next_level_text" : "Get 1 more funimate featured for your next star "
           },
           {
-            "current": 0,
-            "items": [
+            "current" : 0,
+            "items" : [
               {
-                "description": null,
-                "distance": 1,
-                "name": "1 Lit",
-                "target": 1
+                "target" : 1,
+                "description" : null,
+                "distance" : 1,
+                "name" : "1 Lit"
               },
               {
-                "description": null,
-                "distance": 5,
-                "name": "5 Lit",
-                "target": 5
+                "target" : 5,
+                "description" : null,
+                "distance" : 5,
+                "name" : "5 Lit"
               },
               {
-                "description": null,
-                "distance": 10,
-                "name": "10 Lit",
-                "target": 10
+                "target" : 10,
+                "description" : null,
+                "distance" : 10,
+                "name" : "10 Lit"
               },
               {
-                "description": null,
-                "distance": 20,
-                "name": "20 Lit",
-                "target": 20
+                "target" : 20,
+                "description" : null,
+                "distance" : 20,
+                "name" : "20 Lit"
               },
               {
-                "description": null,
-                "distance": 35,
-                "name": "35 Lit",
-                "target": 35
+                "target" : 35,
+                "description" : null,
+                "distance" : 35,
+                "name" : "35 Lit"
               },
               {
-                "description": null,
-                "distance": 50,
-                "name": "50 Lit",
-                "target": 50
+                "target" : 50,
+                "description" : null,
+                "distance" : 50,
+                "name" : "50 Lit"
               },
               {
-                "description": null,
-                "distance": 75,
-                "name": "75 Lit",
-                "target": 75
+                "target" : 75,
+                "description" : null,
+                "distance" : 75,
+                "name" : "75 Lit"
               },
               {
-                "description": null,
-                "distance": 100,
-                "name": "100 Lit",
-                "target": 100
+                "target" : 100,
+                "description" : null,
+                "distance" : 100,
+                "name" : "100 Lit"
               }
             ],
-            "name": "Lit 🔥",
-            "next_level_text": "Get 1 more funimate lit for your next star"
+            "name" : "Lit 🔥",
+            "next_level_text" : "Get 1 more funimate lit for your next star"
           },
           {
-            "current": 0,
-            "items": [
+            "current" : 0,
+            "items" : [
               {
-                "description": null,
-                "distance": 50,
-                "name": "50 Likes Taken",
-                "target": 50
+                "target" : 50,
+                "description" : null,
+                "distance" : 50,
+                "name" : "50 Likes Taken"
               },
               {
-                "description": null,
-                "distance": 100,
-                "name": "100 Likes Taken",
-                "target": 100
+                "target" : 100,
+                "description" : null,
+                "distance" : 100,
+                "name" : "100 Likes Taken"
               },
               {
-                "description": null,
-                "distance": 200,
-                "name": "200 Likes Taken",
-                "target": 200
+                "target" : 200,
+                "description" : null,
+                "distance" : 200,
+                "name" : "200 Likes Taken"
               },
               {
-                "description": null,
-                "distance": 1500,
-                "name": "1.5K Likes Taken",
-                "target": 1500
+                "target" : 1500,
+                "description" : null,
+                "distance" : 1500,
+                "name" : "1.5K Likes Taken"
               },
               {
-                "description": null,
-                "distance": 50000,
-                "name": "50K Likes Taken",
-                "target": 50000
+                "target" : 50000,
+                "description" : null,
+                "distance" : 50000,
+                "name" : "50K Likes Taken"
               },
               {
-                "description": null,
-                "distance": 100000,
-                "name": "100K Likes Taken",
-                "target": 100000
+                "target" : 100000,
+                "description" : null,
+                "distance" : 100000,
+                "name" : "100K Likes Taken"
               },
               {
-                "description": null,
-                "distance": 200000,
-                "name": "200K Likes Taken",
-                "target": 200000
+                "target" : 200000,
+                "description" : null,
+                "distance" : 200000,
+                "name" : "200K Likes Taken"
               },
               {
-                "description": null,
-                "distance": 500000,
-                "name": "500K Likes Taken",
-                "target": 500000
+                "target" : 500000,
+                "description" : null,
+                "distance" : 500000,
+                "name" : "500K Likes Taken"
               }
             ],
-            "name": "Likes ❤️",
-            "next_level_text": "Get 50 more likes for your next star"
+            "name" : "Likes ❤️",
+            "next_level_text" : "Get 50 more likes for your next star"
           },
           {
-            "current": 0,
-            "items": [
+            "current" : 0,
+            "items" : [
               {
-                "description": null,
-                "distance": 25,
-                "name": "25 Followers",
-                "target": 25
+                "target" : 25,
+                "description" : null,
+                "distance" : 25,
+                "name" : "25 Followers"
               },
               {
-                "description": null,
-                "distance": 50,
-                "name": "50 Followers",
-                "target": 50
+                "target" : 50,
+                "description" : null,
+                "distance" : 50,
+                "name" : "50 Followers"
               },
               {
-                "description": null,
-                "distance": 100,
-                "name": "100 Followers",
-                "target": 100
+                "target" : 100,
+                "description" : null,
+                "distance" : 100,
+                "name" : "100 Followers"
               },
               {
-                "description": null,
-                "distance": 500,
-                "name": "500 Followers",
-                "target": 500
+                "target" : 500,
+                "description" : null,
+                "distance" : 500,
+                "name" : "500 Followers"
               },
               {
-                "description": null,
-                "distance": 10000,
-                "name": "10K Followers",
-                "target": 10000
+                "target" : 10000,
+                "description" : null,
+                "distance" : 10000,
+                "name" : "10K Followers"
               },
               {
-                "description": null,
-                "distance": 30000,
-                "name": "30K Followers",
-                "target": 30000
+                "target" : 30000,
+                "description" : null,
+                "distance" : 30000,
+                "name" : "30K Followers"
               },
               {
-                "description": null,
-                "distance": 100000,
-                "name": "100K Followers",
-                "target": 100000
+                "target" : 100000,
+                "description" : null,
+                "distance" : 100000,
+                "name" : "100K Followers"
               },
               {
-                "description": null,
-                "distance": 300000,
-                "name": "300K Followers",
-                "target": 300000
+                "target" : 300000,
+                "description" : null,
+                "distance" : 300000,
+                "name" : "300K Followers"
               }
             ],
-            "name": "Followers 👥",
-            "next_level_text": "Get 25 more followers for your next star"
+            "name" : "Followers 👥",
+            "next_level_text" : "Get 25 more followers for your next star"
           },
           {
-            "current": 0,
-            "items": [
+            "current" : 0,
+            "items" : [
               {
-                "description": null,
-                "distance": 500,
-                "name": "500 Views Taken",
-                "target": 500
+                "target" : 500,
+                "description" : null,
+                "distance" : 500,
+                "name" : "500 Views Taken"
               },
               {
-                "description": null,
-                "distance": 1000,
-                "name": "1K Views Taken",
-                "target": 1000
+                "target" : 1000,
+                "description" : null,
+                "distance" : 1000,
+                "name" : "1K Views Taken"
               },
               {
-                "description": null,
-                "distance": 5000,
-                "name": "5K Views Taken",
-                "target": 5000
+                "target" : 5000,
+                "description" : null,
+                "distance" : 5000,
+                "name" : "5K Views Taken"
               },
               {
-                "description": null,
-                "distance": 25000,
-                "name": "25K Views Taken",
-                "target": 25000
+                "target" : 25000,
+                "description" : null,
+                "distance" : 25000,
+                "name" : "25K Views Taken"
               },
               {
-                "description": null,
-                "distance": 500000,
-                "name": "500K Views Taken",
-                "target": 500000
+                "target" : 500000,
+                "description" : null,
+                "distance" : 500000,
+                "name" : "500K Views Taken"
               },
               {
-                "description": null,
-                "distance": 1000000,
-                "name": "1M Views Taken",
-                "target": 1000000
+                "target" : 1000000,
+                "description" : null,
+                "distance" : 1000000,
+                "name" : "1M Views Taken"
               },
               {
-                "description": null,
-                "distance": 2000000,
-                "name": "2M Views Taken",
-                "target": 2000000
+                "target" : 2000000,
+                "description" : null,
+                "distance" : 2000000,
+                "name" : "2M Views Taken"
               },
               {
-                "description": null,
-                "distance": 5000000,
-                "name": "5M Views Taken",
-                "target": 5000000
+                "target" : 5000000,
+                "description" : null,
+                "distance" : 5000000,
+                "name" : "5M Views Taken"
               }
             ],
-            "name": "Views 👁️",
-            "next_level_text": "Get 500 more views for your next star"
+            "name" : "Views 👁️",
+            "next_level_text" : "Get 500 more views for your next star"
           },
           {
-            "current": 0,
-            "items": [
+            "current" : 0,
+            "items" : [
               {
-                "description": null,
-                "distance": 5,
-                "name": "5 Post Days",
-                "target": 5
+                "target" : 5,
+                "description" : null,
+                "distance" : 5,
+                "name" : "5 Post Days"
               },
               {
-                "description": null,
-                "distance": 15,
-                "name": "15 Post Days",
-                "target": 15
+                "target" : 15,
+                "description" : null,
+                "distance" : 15,
+                "name" : "15 Post Days"
               },
               {
-                "description": null,
-                "distance": 25,
-                "name": "25 Post Days",
-                "target": 25
+                "target" : 25,
+                "description" : null,
+                "distance" : 25,
+                "name" : "25 Post Days"
               },
               {
-                "description": null,
-                "distance": 50,
-                "name": "50 Post Days",
-                "target": 50
+                "target" : 50,
+                "description" : null,
+                "distance" : 50,
+                "name" : "50 Post Days"
               },
               {
-                "description": null,
-                "distance": 100,
-                "name": "100 Post Days",
-                "target": 100
+                "target" : 100,
+                "description" : null,
+                "distance" : 100,
+                "name" : "100 Post Days"
               },
               {
-                "description": null,
-                "distance": 150,
-                "name": "150 Post Days",
-                "target": 150
+                "target" : 150,
+                "description" : null,
+                "distance" : 150,
+                "name" : "150 Post Days"
               },
               {
-                "description": null,
-                "distance": 200,
-                "name": "200 Post Days",
-                "target": 200
+                "target" : 200,
+                "description" : null,
+                "distance" : 200,
+                "name" : "200 Post Days"
               },
               {
-                "description": null,
-                "distance": 250,
-                "name": "250 Post Days",
-                "target": 250
+                "target" : 250,
+                "description" : null,
+                "distance" : 250,
+                "name" : "250 Post Days"
               }
             ],
-            "name": "Post Days 📅",
-            "next_level_text": "Post 5 more days for your next star"
+            "name" : "Post Days 📅",
+            "next_level_text" : "Post 5 more days for your next star"
           }
         ],
-        "levels": {
-          "items": [
+        "levels" : {
+          "items" : [
             {
-              "distance": 5,
-              "name": "BRONZE",
-              "target": 5
+              "name" : "BRONZE",
+              "distance" : 5,
+              "target" : 5
             },
             {
-              "distance": 18,
-              "name": "SILVER",
-              "target": 18
+              "name" : "SILVER",
+              "distance" : 18,
+              "target" : 18
             },
             {
-              "distance": 30,
-              "name": "GOLD",
-              "target": 30
+              "name" : "GOLD",
+              "distance" : 30,
+              "target" : 30
             },
             {
-              "distance": 41,
-              "name": "PLATINUM",
-              "target": 41
+              "name" : "PLATINUM",
+              "distance" : 41,
+              "target" : 41
             },
             {
-              "name": "DIAMOND",
-              "target": null
+              "name" : "DIAMOND",
+              "target" : null
             },
             {
-              "name": "TITAN",
-              "target": null
+              "name" : "TITAN",
+              "target" : null
             }
           ],
-          "level_name": "COLLECT STARS TO EARN BADGES!",
-          "progress": 0
-        },
-        "num_of_captured_badges": 0
+          "progress" : 0,
+          "level_name" : "COLLECT STARS TO EARN BADGES!"
+        }
       },
-      "biography": "",
-      "blocked_me": false,
-      "chat_privacy": 1,
-      "comment_privacy": 1,
-      "duet_privacy": 0,
-      "featured": false,
-      "featured_post_count": 0,
-      "guest": false,
-      "is_embassador": false,
-      "is_idfa_allowed": false,
-      "is_pro_user": true,
-      "lit_post_count": 0,
-      "permission_notification_challenge": true,
-      "permission_notification_comment": true,
-      "permission_notification_follow": true,
-      "permission_notification_like": true,
-      "permission_notification_live": true,
-      "permission_notification_mention": true,
-      "permission_notification_sound": true,
-      "private": false,
-      "profile_picture_url": "",
-      "total_in_likes": 0,
-      "total_out_likes": 0,
-      "total_views": 0,
-      "user_id": 30939434,
-      "username": "",
-      "video_privacy": 1
+      "private" : false,
+      "comment_privacy" : 1,
+      "duet_privacy" : 0,
+      "featured_post_count" : 0,
+      "is_idfa_allowed" : false,
+      "permission_notification_live" : true,
+      "permission_notification_follow" : true,
+      "permission_notification_mention" : true,
+      "permission_notification_sound" : true,
+      "profile_picture_url" : "https://cf.funimate.com/default_profile_picture.png",
+      "total_views" : 0,
+      "is_pro_user" : true,
+      "permission_notification_comment" : true,
+      "email" : "kakashi@telegram.3060",
+      "video_privacy" : 1,
+      "lit_post_count" : 0,
+      "permission_notification_challenge" : true,
+      "biography" : "",
+      "featured" : false,
+      "guest" : false,
+      "permission_notification_like" : true
     }
   },
-  "error": null,
-  "success": true
-}
+  "success" : true
+};
+
 $done({body: JSON.stringify(obj)});
