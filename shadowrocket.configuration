@@ -560,6 +560,8 @@ picart = type=http-response,script-path=https://raw.githubusercontent.com/iSteal
 funimate = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json,pattern=^https:\/\/api\.funimate\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
 Photomath =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,max-size=131072,requires-body=true,timeout=10,enable=true
 Photoshop =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,max-size=131072,requires-body=true,timeout=10,enable=true
+Lightroom =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Lightroom.json,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,max-size=131072,requires-body=true,timeout=10,enable=true
+
 [MITM]
 hostname = vsco.co,api-kinemaster-assetstore.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,lcs-mobile-cops.adobe.io
 ca-passphrase = Shadowrocket
