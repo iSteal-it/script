@@ -24,7 +24,7 @@ obj= {
   "subscription": {
     "subscription_id": "replika.year",
     "token_id": "320000814638512",
-    "subscription_state": "FreeTrial",
+    "subscription_state": "replika.year",
     "recurring": {
       "period_timeunit": "year",
       "period_amount": 1
