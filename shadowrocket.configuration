@@ -562,7 +562,7 @@ Photomath =type=http-response,script-path=https://raw.githubusercontent.com/iSte
 Photoshop =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,max-size=131072,requires-body=true,timeout=10,enable=true
 Lightroom =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Lightroom.json,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,max-size=131072,requires-body=true,timeout=10,enable=true
 Prequel =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Prequel.json,pattern=^https:\/\/api\.apphud\.com\/v1\/customers,max-size=131072,requires-body=true,timeout=10,enable=true
-Replika =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/replika.json,pattern=^https:\/\/replika\.ai\/api\/mobile\/1\.4\/payment_subscriptions,requires-body=true,timeout=10,enable=true
+Replika =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/replika.json,pattern=^https:\/\/replika\.ai\/api\/mobile\/1\.4\/payment_subscriptions\/restore\/ios,requires-body=true,timeout=10,enable=true
 
 [MITM]
 hostname = vsco.co,api-kinemaster-assetstore.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,lcs-mobile-cops.adobe.io,api.apphud.com,replika.ai
