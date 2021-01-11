@@ -1,38 +1,6 @@
 var obj = JSON.parse($response.body);
 
-obj= {
-  "features": [
-    {
-      "name": "all_backgrounds"
-    },
-    {
-      "name": "calls"
-    },
-    {
-      "name": "full_library_access"
-    },
-    {
-      "name": "relationship_status"
-    },
-    {
-      "name": "3d_avatar"
-    },
-    {
-      "name": "replika_diaries"
-    }
-  ],
-  "subscription": {
-    "subscription_id": "replika.year",
-    "token_id": "320000814638512",
-    "subscription_state": "replika.year",
-    "recurring": {
-      "period_timeunit": "year",
-      "period_amount": 1
-    },
-    "created": "2021-01-11T07:53:17Z",
-    "expiration": "2022-01-18T07:53:17Z",
-    "subscription_type": "SUBS",
-    "source": "ios"
-  }
-}
+obj= [
+  "replika.year"
+]
 $done({body: JSON.stringify(obj)});
