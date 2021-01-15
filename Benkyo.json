@@ -6,9 +6,9 @@ obj={
   "subscriber": {
     "entitlements": {
       "pro": {
-        "expires_date": "2021-01-18T15:01:55Z",
+        "expires_date": "2022-01-18T15:01:55Z",
         "grace_period_expires_date": null,
-        "product_identifier": "benkyo.pro.ars.monthly.default",
+        "product_identifier": "benkyo.pro.ars.yearly.default",
         "purchase_date": "2021-01-15T15:01:55Z"
       }
     },
@@ -18,12 +18,12 @@ obj={
     "non_subscriptions": {},
     "original_app_user_id": "$RCAnonymousID:8fd4f313eb784ba0a029480998fcdfbc",
     "original_application_version": "1",
-    "original_purchase_date": "2021-01-14T21:13:13Z",
+    "original_purchase_date": "2022-01-14T21:13:13Z",
     "other_purchases": {},
     "subscriptions": {
-      "benkyo.pro.ars.monthly.default": {
+      "benkyo.pro.ars.yearly.default": {
         "billing_issues_detected_at": null,
-        "expires_date": "2021-01-18T15:01:55Z",
+        "expires_date": "2022-01-18T15:01:55Z",
         "grace_period_expires_date": null,
         "is_sandbox": false,
         "original_purchase_date": "2021-01-15T15:01:56Z",
