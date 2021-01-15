@@ -1,0 +1,38 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "request_date": "2021-01-15T15:04:01Z",
+  "request_date_ms": 1610723041631,
+  "subscriber": {
+    "entitlements": {
+      "pro": {
+        "expires_date": "2021-01-18T15:01:55Z",
+        "grace_period_expires_date": null,
+        "product_identifier": "benkyo.pro.ars.monthly.default",
+        "purchase_date": "2021-01-15T15:01:55Z"
+      }
+    },
+    "first_seen": "2021-01-15T15:00:53Z",
+    "last_seen": "2021-01-15T15:00:53Z",
+    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
+    "non_subscriptions": {},
+    "original_app_user_id": "$RCAnonymousID:8fd4f313eb784ba0a029480998fcdfbc",
+    "original_application_version": "1",
+    "original_purchase_date": "2021-01-14T21:13:13Z",
+    "other_purchases": {},
+    "subscriptions": {
+      "benkyo.pro.ars.monthly.default": {
+        "billing_issues_detected_at": null,
+        "expires_date": "2021-01-18T15:01:55Z",
+        "grace_period_expires_date": null,
+        "is_sandbox": false,
+        "original_purchase_date": "2021-01-15T15:01:56Z",
+        "period_type": "trial",
+        "purchase_date": "2021-01-15T15:01:55Z",
+        "store": "app_store",
+        "unsubscribe_detected_at": null
+      }
+    }
+  }
+};
+$done({body: JSON.stringify(obj)});
