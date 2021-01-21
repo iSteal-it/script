@@ -5,8 +5,7 @@ obj={
   "data": {
     "original_purchase_date": "2021-01-21 14:14:33 Etc/GMT",
     "original_purchase_date_ms": 1611238473000,
-    "expires_date": "2025-01-24 14:14:32 Etc/GMT",
-    "expires_date_ms": 1611497672000,
+    "expires_date_ms": 1911497672000,
     "is_trial_period": false,
     "purchase_type": 1
   }
