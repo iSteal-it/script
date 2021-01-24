@@ -6,7 +6,7 @@ obj={
     "original_purchase_date": "2021-01-21 14:14:33 Etc/GMT",
     "original_purchase_date_ms": 1611238473000,
     "expires_date_ms": 1911497672000,
-    "is_trial_period": false,
+    "is_trial_period": true,
     "purchase_type": 1
   }
 };
