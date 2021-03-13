@@ -1,0 +1,20 @@
+var obj = JSON.parse($response.body);
+
+obj={
+{
+  "hasStripeAccount": false,
+  "products": [
+    {
+      "product": "DuetStudio",
+      "vendor": "apple",
+      "cancelled": false,
+      "expiresDate": "2022-02-21T07:05:38Z",
+      "purchaseDate": "2021-02-14T07:05:38Z",
+      "subscriptionId": 292301,
+      "inTrial": false
+    }
+  ],
+  "success": true
+}
+};
+$done({body: JSON.stringify(obj)});
