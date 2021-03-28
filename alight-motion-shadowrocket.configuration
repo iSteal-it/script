@@ -555,7 +555,7 @@ localhost = 127.0.0.1
 alight motion = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/alight-motion.json,pattern=^https?:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
 Vllo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 simply piano = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/SimplyPiano,pattern=^https:\/\/asla\.joytunes\.com\/server\/asla\/accounts\/accountApplyPurchase,requires-body=true,timeout=10,enable=true
-vivacut = type=htrp-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Vivacut.json,pattern=^https:\/\/xy-xjp-medi\.kakalili\.com\/api\/rest\/commerce\/integrate\/vip\/perform,max-size=131072,requires-body=true,timeout=10,enable=true
+vivacut = type=htrp-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Vivacut.json,pattern=^https:\/\/xy\-/xjp\-/medi\.kakalili\.com\/api\/rest\/commerce\/integrate\/vip\/perform,max-size=131072,requires-body=true,timeout=10,enable=true
 [MITM]
 hostname = us-central1-alight-creative.cloudfunctions.net,buy.itunes.apple.com,asla.joytunes.com,xy-xjp-medi.kakalili.com
 ca-passphrase = Shadowrocket
