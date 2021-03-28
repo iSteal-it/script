@@ -568,7 +568,7 @@ Screen recorder=type=http-response,script-path=https://raw.githubusercontent.com
 Power Director =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/PowerDirector.json,pattern=^https:\/\/app-service\.cyberlink\.com\/service\/ios\/verifyReceipt,requires-body=true,timeout=10,enable=true
 Djay = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,max-size=131072,requires-body=true,timeout=10,enable=true
 Duet Display = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/duetDisplay.json,pattern=^https:\/\/rdp\.duetdisplay\.com\/v1\/users\/validateReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
-Vllo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
+
 [MITM]
 hostname = vsco.co,api-kinemaster-assetstore.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,lcs-mobile-cops.adobe.io,api.apphud.com,replika.ai,api.revenuecat.com,app-service.cyberlink.com,app.algoriddim.co,rdp.duetdisplay.com,buy.itunes.apple.com
 ca-passphrase = Shadowrocket
