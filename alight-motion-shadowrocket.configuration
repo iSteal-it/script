@@ -553,7 +553,7 @@ localhost = 127.0.0.1
 
 [Script]
 alight motion = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/alight-motion.json,pattern=^https?:\/\/us-central1-alight-creative\.cloudfunctions\.net\/getAccountStatusAndLicenses,max-size=131072,requires-body=true,timeout=10,enable=true
-viva cut = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Vivacut.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
+viva cut = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Vivacut.json,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 [MITM]
 hostname = us-central1-alight-creative.cloudfunctions.net,buy.itunes.apple.com
 ca-passphrase = Shadowrocket
