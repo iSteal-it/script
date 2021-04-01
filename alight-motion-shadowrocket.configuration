@@ -552,7 +552,7 @@ localhost = 127.0.0.1
 
 
 [Script]
-inshot = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/inshot.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
+inshot = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/inshot.json,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 
 [MITM]
 hostname = buy.itunes.apple.com
