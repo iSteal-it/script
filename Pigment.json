@@ -1,0 +1,39 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "request_date": "2021-04-01T04:45:11Z",
+  "request_date_ms": 1617252311177,
+  "subscriber": {
+    "entitlements": {
+      "premium_access": {
+        "expires_date": "2021-04-06T11:59:41Z",
+        "grace_period_expires_date": null,
+        "product_identifier": "com.pixite.pigment.1weekM",
+        "purchase_date": "2021-03-30T11:59:41Z"
+      }
+    },
+    "first_seen": "2021-03-30T11:55:30Z",
+    "last_seen": "2021-04-01T04:45:11Z",
+    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
+    "non_subscriptions": {},
+    "original_app_user_id": "BF8B9DFB-E054-4054-A00D-9A5B8D10DB79",
+    "original_application_version": "521",
+    "original_purchase_date": "2021-02-19T14:12:22Z",
+    "other_purchases": {},
+    "subscriptions": {
+      "com.pixite.pigment.1weekM": {
+        "billing_issues_detected_at": null,
+        "expires_date": "2021-04-06T11:59:41Z",
+        "grace_period_expires_date": null,
+        "is_sandbox": false,
+        "original_purchase_date": "2021-03-30T11:59:42Z",
+        "ownership_type": "PURCHASED",
+        "period_type": "trial",
+        "purchase_date": "2021-03-30T11:59:41Z",
+        "store": "app_store",
+        "unsubscribe_detected_at": "2021-04-01T00:15:38Z"
+      }
+    }
+  }
+}
+$done({body: JSON.stringify(obj)});
