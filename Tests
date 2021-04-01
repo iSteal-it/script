@@ -61,7 +61,7 @@ DOMAIN-SUFFIX,apple.news
 [Script]
 VSCO = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vsco.json, pattern=^https:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=true,timeout=10,enable=true
 Kinemaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Kinemaster.json,pattern=^https:\/\/api-kinemaster-assetstore\.(nexstreaming|kinemasters)\.com\/.+\/product\/verifyReceipt$,max-size=131072,requires-body=true,timeout=10,enable=true
-
+inshot =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Inshot.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 [MITM]
 hostname = vsco.co,api-kinemaster-assetstore.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,lcs-mobile-cops.adobe.io,api.apphud.com,replika.ai,api.revenuecat.com,app-service.cyberlink.com,app.algoriddim.com,rdp.duetdisplay.com,buy.itunes.apple.com
 ca-passphrase = Shadowrocket
