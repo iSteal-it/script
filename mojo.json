@@ -1,0 +1,39 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "request_date": "2021-04-10T05:22:13Z",
+  "request_date_ms": 1618032133907,
+  "subscriber": {
+    "entitlements": {
+      "pro": {
+        "expires_date": "2021-04-13T05:22:07Z",
+        "grace_period_expires_date": null,
+        "product_identifier": "video.mojo.pro.yearly",
+        "purchase_date": "2021-04-10T05:22:07Z"
+      }
+    },
+    "first_seen": "2021-04-10T05:21:08Z",
+    "last_seen": "2021-04-10T05:21:08Z",
+    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
+    "non_subscriptions": {},
+    "original_app_user_id": "HR8Ok3zNrVMZ1VaqJhWutAwsJ4b2",
+    "original_application_version": "401",
+    "original_purchase_date": "2021-04-10T05:20:26Z",
+    "other_purchases": {},
+    "subscriptions": {
+      "video.mojo.pro.yearly": {
+        "billing_issues_detected_at": null,
+        "expires_date": "2021-04-13T05:22:07Z",
+        "grace_period_expires_date": null,
+        "is_sandbox": false,
+        "original_purchase_date": "2021-04-10T05:22:07Z",
+        "ownership_type": "PURCHASED",
+        "period_type": "trial",
+        "purchase_date": "2021-04-10T05:22:07Z",
+        "store": "app_store",
+        "unsubscribe_detected_at": null
+      }
+    }
+  }
+}
+$done({body: JSON.stringify(obj)});
