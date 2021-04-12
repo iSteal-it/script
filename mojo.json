@@ -6,7 +6,7 @@ obj={
   "subscriber": {
     "entitlements": {
       "pro": {
-        "expires_date": "2021-04-13T05:22:07Z",
+        "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "product_identifier": "video.mojo.pro.yearly",
         "purchase_date": "2021-04-10T05:22:07Z"
@@ -23,7 +23,7 @@ obj={
     "subscriptions": {
       "video.mojo.pro.yearly": {
         "billing_issues_detected_at": null,
-        "expires_date": "2021-04-13T05:22:07Z",
+        "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "is_sandbox": false,
         "original_purchase_date": "2021-04-10T05:22:07Z",
