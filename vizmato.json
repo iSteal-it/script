@@ -1,0 +1,81 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "status": "0",
+  "deviceid": "7337D044-8B81-4228-B3A5-C3EC3B3A77B6",
+  "receipt-data": {
+    "environment": "Production",
+    "receipt": {
+      "receipt_type": "Production",
+      "adam_id": 496232649,
+      "app_item_id": 496232649,
+      "bundle_id": "com.globaldelight.gameyourvideo",
+      "application_version": "4.2.110001",
+      "download_id": 72081361984187,
+      "version_external_identifier": 840605757,
+      "receipt_creation_date": "2021-04-12 13:30:00 Etc/GMT",
+      "receipt_creation_date_ms": "1618234200000",
+      "receipt_creation_date_pst": "2021-04-12 06:30:00 America/Los_Angeles",
+      "request_date": "2021-04-12 13:30:03 Etc/GMT",
+      "request_date_ms": "1618234203031",
+      "request_date_pst": "2021-04-12 06:30:03 America/Los_Angeles",
+      "original_purchase_date": "2021-04-12 13:28:27 Etc/GMT",
+      "original_purchase_date_ms": "1618234107000",
+      "original_purchase_date_pst": "2021-04-12 06:28:27 America/Los_Angeles",
+      "original_application_version": "4.2.110001",
+      "in_app": [
+        {
+          "quantity": "1",
+          "product_id": "com.globaldelight.vizmato.ProSubscription_12Months",
+          "transaction_id": "320000875195418",
+          "original_transaction_id": "320000875195418",
+          "purchase_date": "2021-04-12 13:29:19 Etc/GMT",
+          "purchase_date_ms": "1618234159000",
+          "purchase_date_pst": "2021-04-12 06:29:19 America/Los_Angeles",
+          "original_purchase_date": "2021-04-12 13:29:20 Etc/GMT",
+          "original_purchase_date_ms": "1618234160000",
+          "original_purchase_date_pst": "2021-04-12 06:29:20 America/Los_Angeles",
+          "expires_date": "2021-04-19 13:29:19 Etc/GMT",
+          "expires_date_ms": "1618838959000",
+          "expires_date_pst": "2021-04-19 06:29:19 America/Los_Angeles",
+          "web_order_line_item_id": "320000357488267",
+          "is_trial_period": "true",
+          "is_in_intro_offer_period": "false",
+          "in_app_ownership_type": "PURCHASED"
+        }
+      ]
+    },
+    "latest_receipt_info": [
+      {
+        "quantity": "1",
+        "product_id": "com.globaldelight.vizmato.ProSubscription_12Months",
+        "transaction_id": "320000875195418",
+        "original_transaction_id": "320000875195418",
+        "purchase_date": "2021-04-12 13:29:19 Etc/GMT",
+        "purchase_date_ms": "1618234159000",
+        "purchase_date_pst": "2021-04-12 06:29:19 America/Los_Angeles",
+        "original_purchase_date": "2021-04-12 13:29:20 Etc/GMT",
+        "original_purchase_date_ms": "1618234160000",
+        "original_purchase_date_pst": "2021-04-12 06:29:20 America/Los_Angeles",
+        "expires_date": "2021-04-19 13:29:19 Etc/GMT",
+        "expires_date_ms": "1618838959000",
+        "expires_date_pst": "2021-04-19 06:29:19 America/Los_Angeles",
+        "web_order_line_item_id": "320000357488267",
+        "is_trial_period": "true",
+        "is_in_intro_offer_period": "false",
+        "in_app_ownership_type": "PURCHASED",
+        "subscription_group_identifier": "20505188"
+      }
+    ],
+    "pending_renewal_info": [
+      {
+        "auto_renew_product_id": "com.globaldelight.vizmato.ProSubscription_12Months",
+        "product_id": "com.globaldelight.vizmato.ProSubscription_12Months",
+        "original_transaction_id": "320000875195418",
+        "auto_renew_status": "1"
+      }
+    ],
+    "status": 0
+  }
+}
+$done({body: JSON.stringify(obj)});
