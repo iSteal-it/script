@@ -570,7 +570,7 @@ Djay = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-i
 Duet Display = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/duetDisplay.json,pattern=^https:\/\/rdp\.duetdisplay\.com\/v1\/users\/validateReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 Vllo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 bazaart = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/bazaart.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
-mojo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json,pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),max-size=131072,requires-body=true,timeout=10,enable=true
+mojo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mojo.json,pattern=^https:\/\/api\.revenuecat\.com\/v1\/receipts,max-size=131072,requires-body=true,timeout=10,enable=true
 vizmato = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,max-size=131072,requires-body=true,timeout=10,enable=true
 
 [MITM]
