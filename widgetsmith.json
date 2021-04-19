@@ -1,0 +1,36 @@
+{
+  "request_date": "2021-04-19T05:23:20Z",
+  "request_date_ms": 1618809800442,
+  "subscriber": {
+    "entitlements": {
+      "Premium": {
+        "expires_date": "2021-04-26T05:22:46Z",
+        "grace_period_expires_date": null,
+        "product_identifier": "PremiumAnnualWidget",
+        "purchase_date": "2021-04-19T05:22:46Z"
+      }
+    },
+    "first_seen": "2021-04-19T05:22:18Z",
+    "last_seen": "2021-04-19T05:22:18Z",
+    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
+    "non_subscriptions": {},
+    "original_app_user_id": "$RCAnonymousID:72d3bb622af0413c86784a3f5b0c3114",
+    "original_application_version": "107",
+    "original_purchase_date": "2021-04-19T05:21:13Z",
+    "other_purchases": {},
+    "subscriptions": {
+      "PremiumAnnualWidget": {
+        "billing_issues_detected_at": null,
+        "expires_date": "2021-04-26T05:22:46Z",
+        "grace_period_expires_date": null,
+        "is_sandbox": false,
+        "original_purchase_date": "2021-04-19T05:22:47Z",
+        "ownership_type": "PURCHASED",
+        "period_type": "trial",
+        "purchase_date": "2021-04-19T05:22:46Z",
+        "store": "app_store",
+        "unsubscribe_detected_at": null
+      }
+    }
+  }
+}
