@@ -565,6 +565,7 @@ Benkyo =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-
 Djay = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,max-size=131072,requires-body=true,timeout=10,enable=true
 Vllo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 vizmato = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,max-size=131072,requires-body=true,timeout=10,enable=true
+widgetsmith = type= http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/widgetsmith.json,pattern=^https:\/\/api\.revenuecat\.com\/v1/\receipts,requires-body=true,timeout=10,enable=true
 
 [MITM]
 hostname = vsco.co,api-kinemaster-assetstore.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,lcs-mobile-cops.adobe.io,api.revenuecat.com,app.algoriddim.com,buy.itunes.apple.com,web.vizmato.com
