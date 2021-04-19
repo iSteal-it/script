@@ -7,11 +7,11 @@ obj= {
 
     },
     "first_seen" : "2020-05-31T15:06:02Z",
-    "original_application_version" : null,
+    "original_application_version" : "107",
     "other_purchases" : {
 
     },
-    "management_url" : null,
+    "management_url" : "itms-apps://apps.apple.com/account/subscriptions",
     "subscriptions" : {
       "revenuecat.pro.yearly" : {
         "is_sandbox" : false,
@@ -25,7 +25,7 @@ obj= {
       }
     },
     "entitlements" : {
-      "pro" : {
+      "Premium" : {
         "expires_date" : "2099-12-01T03:51:32Z",
         "product_identifier" : "PremiumAnnualWidget",
         "purchase_date" : "2019-10-31T02:51:32Z"
