@@ -27,12 +27,12 @@ obj= {
     "entitlements" : {
       "pro" : {
         "expires_date" : "2099-12-01T03:51:32Z",
-        "product_identifier" : "revenuecat.pro.yearly",
+        "product_identifier" : "PremiumAnnualWidget",
         "purchase_date" : "2019-10-31T02:51:32Z"
       }
     },
     "original_purchase_date" : null,
-    "original_app_user_id" : "XAMefyrah5UmeDQiHBUU5oPbbdT2",
+    "original_app_user_id" : "$RCAnonymousID:72d3bb622af0413c86784a3f5b0c3114",
     "last_seen" : "2020-12-27T21:01:03Z"
   }
 };
