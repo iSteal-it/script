@@ -1,0 +1,13 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "user": null,
+  "user_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJkZXZpY2VfaWQiOiI5MDkwRTIwRS0xNzZCLTQ4OUEtOUQ4Ny0zMEFGNUZCNUQwNTQiLCJleHAiOjE2MTk2Nzc1NDgsInN1YnNjcmlwdGlvbiI6eyJzdWJzY3JpcHRpb25fZXhwIjoxNjE5ODUwMjExLCJjdXN0b21lcl9pZCI6ImlzMjY0NjQ1NSIsInByb2R1Y3RfaWQiOiJ5dCJ9fQ.ALrTy8-BpSIR1duwYE-DEE_VR4ITnVDUOBB_coQGLZo3rgzERwwZer2CDsNu_B_Rddad5siF3ApkulgogCZA1Q",
+  "user_token_lifetime": 86400,
+  "subscription_apple": {
+    "subscription_exp": 1619850211,
+    "product_id": "yt"
+  },
+  "subscription_google": null
+};
+$done({body: JSON.stringify(obj)});
