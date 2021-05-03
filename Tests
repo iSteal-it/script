@@ -61,7 +61,7 @@ DOMAIN-SUFFIX,apple.news
 [Script]
 VSCO = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vsco.json, pattern=^https:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=true,timeout=10,enable=true
 Kinemaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Kinemaster.json,pattern=^https:\/\/api-kinemaster-assetstore\.(nexstreaming|kinemasters)\.com\/.+\/product\/verifyReceipt$,max-size=131072,requires-body=true,timeout=10,enable=true
-unfold = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfold.json,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$,requires-body=true,timeout=10,enable=true
+unfold = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=true,timeout=10,enable=true
 [MITM]
 hostname = vsco.co,api-kinemaster-assetstore.kinemasters.com,api.unfold.app
 ca-passphrase = Shadowrocket
