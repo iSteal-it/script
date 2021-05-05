@@ -63,7 +63,7 @@ VSCO = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-
 Kinemaster = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Kinemaster.json,pattern=^https:\/\/api-kinemaster-assetstore\.(nexstreaming|kinemasters)\.com\/.+\/product\/verifyReceipt$,max-size=131072,requires-body=true,timeout=10,enable=true
 unfold = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/unfoldtest.json,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts,requires-body=true,timeout=10,enable=true
 mosaic = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=true,timeout=10,enable=true
-inshot = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Inshot.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=true,timeout=10,enable=true
+inshot = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Inshot.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=true,timeout=10,enable=true
 
 [MITM]
 hostname = vsco.co,api-kinemaster-assetstore.kinemasters.com,api.unfold.app,buy.itunes.apple.com
