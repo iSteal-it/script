@@ -21,14 +21,14 @@ obj={
     "original_purchase_date": "2021-05-07T11:42:02Z",
     "other_purchases": {},
     "subscriptions": {
-      "com.colourtone.weekly": {
+      "com.colourtone.yearly": {
         "billing_issues_detected_at": null,
         "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "is_sandbox": false,
         "original_purchase_date": "2021-05-07T12:12:17Z",
         "ownership_type": "PURCHASED",
-        "period_type": "trial",
+        "period_type": "annual",
         "purchase_date": "2021-05-07T12:12:17Z",
         "store": "app_store",
         "unsubscribe_detected_at": null
