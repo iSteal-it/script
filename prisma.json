@@ -3,8 +3,8 @@ var obj = JSON.parse($response.body);
 obj={
   "status": "ok",
   "is_valid": true,
-  "expiration_date": "2021-05-10T12:06:54Z",
-  "is_trial": true,
+  "expiration_date": "2099-12-01T03:51:32Z",
+  "is_trial": false,
   "processing_count": 5,
   "is_introductory_used": true,
   "product_id": "",
