@@ -6,7 +6,7 @@ obj={
   "subscriber": {
     "entitlements": {
       "com.colourtone.entitled": {
-        "expires_date": "2021-05-10T12:12:17Z",
+        "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "product_identifier": "com.colourtone.weekly",
         "purchase_date": "2021-05-07T12:12:17Z"
@@ -23,7 +23,7 @@ obj={
     "subscriptions": {
       "com.colourtone.weekly": {
         "billing_issues_detected_at": null,
-        "expires_date": "2021-05-10T12:12:17Z",
+        "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "is_sandbox": false,
         "original_purchase_date": "2021-05-07T12:12:17Z",
