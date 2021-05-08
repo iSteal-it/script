@@ -61,7 +61,7 @@ DOMAIN-SUFFIX,apple.news
 [Script]
 VSCO = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vsco.json, pattern=^https:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=true,timeout=10,enable=true
 prisma = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/prisma.json, pattern=^https:\/\/api\.neuralprisma\.com\/receipt\/ios\/upload,requires-body=true,timeout=10,enable=true
-colortone = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/colortone.json, pattern=^https:\/\/api\.revenuecat\.com\/v1\/receipts$,requires-body=true,timeout=10,enable=true
+colortone = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/colortonetest.json, pattern=^https:\/\/api\.revenuecat\.com\/v1\/receipts$,requires-body=true,timeout=10,enable=true
 
 [MITM]
 hostname = vsco.co,api.neuralprisma.com,api.revenuecat.com
