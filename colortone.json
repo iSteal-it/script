@@ -1,6 +1,5 @@
-var obj = JSON.parse($response.body);
 
-obj={
+var obj={
   "request_date": "2021-05-07T12:13:02Z",
   "request_date_ms": 1620389582503,
   "subscriber": {
