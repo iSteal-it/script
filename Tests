@@ -60,7 +60,7 @@ DOMAIN-SUFFIX,apple.news
 
 [Script]
 VSCO = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vsco.json, pattern=^https:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/,requires-body=true,timeout=10,enable=true
-headspace = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/headspace.json, pattern=^https:\/\/api\.prod\.headspace\.com\/subscription\/user-subscriptions,requires-body=true,timeout=10,enable=true
+headspace = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/headspace.json, pattern=^https:\/\/api\.prod\.headspace\.com\/subscription\/user-subscriptions$,requires-body=true,timeout=10,enable=true
 [MITM]
 hostname = vsco.co,api.prod.headspace.com
 ca-passphrase = Shadowrocket
