@@ -6,7 +6,7 @@ obj={
   "subscriber": {
     "entitlements": {
       "pro": {
-        "expires_date": "2021-05-18T12:16:45Z",
+        "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "product_identifier": "studio.sweet.Strucc.yearly.everbloom.pro.free_trial",
         "purchase_date": "2021-05-15T12:16:45Z"
@@ -23,7 +23,7 @@ obj={
     "subscriptions": {
       "studio.sweet.Strucc.yearly.everbloom.pro.free_trial": {
         "billing_issues_detected_at": null,
-        "expires_date": "2021-05-18T12:16:45Z",
+        "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "is_sandbox": false,
         "original_purchase_date": "2021-05-15T12:16:45Z",
