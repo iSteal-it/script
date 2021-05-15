@@ -1,0 +1,39 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "request_date": "2021-05-15T12:16:54Z",
+  "request_date_ms": 1621081014684,
+  "subscriber": {
+    "entitlements": {
+      "pro": {
+        "expires_date": "2021-05-18T12:16:45Z",
+        "grace_period_expires_date": null,
+        "product_identifier": "studio.sweet.Strucc.yearly.everbloom.pro.free_trial",
+        "purchase_date": "2021-05-15T12:16:45Z"
+      }
+    },
+    "first_seen": "2021-05-15T12:15:50Z",
+    "last_seen": "2021-05-15T12:15:50Z",
+    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
+    "non_subscriptions": {},
+    "original_app_user_id": "$RCAnonymousID:b7e721932f29496385fa32558fab8e66",
+    "original_application_version": "1092",
+    "original_purchase_date": "2021-05-15T12:09:07Z",
+    "other_purchases": {},
+    "subscriptions": {
+      "studio.sweet.Strucc.yearly.everbloom.pro.free_trial": {
+        "billing_issues_detected_at": null,
+        "expires_date": "2021-05-18T12:16:45Z",
+        "grace_period_expires_date": null,
+        "is_sandbox": false,
+        "original_purchase_date": "2021-05-15T12:16:45Z",
+        "ownership_type": "PURCHASED",
+        "period_type": "trial",
+        "purchase_date": "2021-05-15T12:16:45Z",
+        "store": "app_store",
+        "unsubscribe_detected_at": null
+      }
+    }
+  }
+}
+$done({body: JSON.stringify(obj)});
