@@ -556,6 +556,8 @@ localhost = 127.0.0.1
 prisma = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/prisma.json, pattern=^https:\/\/api\.neuralprisma\.com\/receipt\/ios\/upload,requires-body=true,timeout=10,enable=true
 colortone = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/colortonetest.json, pattern=^https:\/\/api\.revenuecat\.com\/v1\/receipts$,requires-body=true,timeout=10,enable=true
 vlogstar = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vlogstar.json, pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=true,timeout=10,enable=true
+Everbloom = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/everbloom.json, pattern=^https:\/\/api\.revenuecat\.com\/v1\/receipts$,requires-body=true,timeout=10,enable=true
+
 [MITM]
 hostname = api.neuralprisma.com,api.revenuecat.com,buy.itunes.apple.com
 ca-passphrase = Shadowrocket
