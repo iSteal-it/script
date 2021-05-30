@@ -1,24 +1,39 @@
+var obj = JSON.parse($response.body);
 
-var body = $response.body;
-var url = $request.url;
-
-const path1 = '/api/subscriptions/2.1/user-subscriptions/';
-
-let obj = JSON.parse(body);
-
-if (url.indexOf(path1) != -1) {
-	obj.user_subscription["expires_on_sec"] = 1655536094;
-	obj.user_subscription["expired"] = false;
-	obj.user_subscription["payment_type"] = 2;
-	obj.user_subscription["is_trial_period"] = true;
-	obj.user_subscription["starts_on_sec"] = 1560831070;
-	obj.user_subscription["is_active"] = true;
-	obj.user_subscription["auto_renew"] = true;
-	obj.user_subscription["last_verified_sec"] = 1560831070;
-	obj.user_subscription["subscription_code"] = "VSCOANNUAL";
-	obj.user_subscription["user_id"] = 54624336;
-	obj.user_subscription["source"] = 1;
-	body = JSON.stringify(obj);  
- }
-
-$done({body});
+obj={
+  "request_date": "2021-05-30T14:13:53Z",
+  "request_date_ms": 1622384033127,
+  "subscriber": {
+    "entitlements": {
+      "membership": {
+        "expires_date": "2021-06-06T03:34:30Z",
+        "grace_period_expires_date": null,
+        "product_identifier": "VSCOANNUAL",
+        "purchase_date": "2021-05-30T03:34:30Z"
+      }
+    },
+    "first_seen": "2021-05-17T02:24:24Z",
+    "last_seen": "2021-05-30T14:12:25Z",
+    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
+    "non_subscriptions": {},
+    "original_app_user_id": "$RCAnonymousID:d036d870acb24289addc6af02b17c1b9",
+    "original_application_version": "21802",
+    "original_purchase_date": "2021-05-30T14:08:30Z",
+    "other_purchases": {},
+    "subscriptions": {
+      "VSCOANNUAL": {
+        "billing_issues_detected_at": null,
+        "expires_date": "2021-06-06T03:34:30Z",
+        "grace_period_expires_date": null,
+        "is_sandbox": false,
+        "original_purchase_date": "2021-05-30T03:34:31Z",
+        "ownership_type": "PURCHASED",
+        "period_type": "trial",
+        "purchase_date": "2021-05-30T03:34:30Z",
+        "store": "app_store",
+        "unsubscribe_detected_at": "2021-05-30T07:49:07Z"
+      }
+    }
+  }
+}
+$done({body: JSON.stringify(obj)});
