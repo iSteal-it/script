@@ -59,7 +59,7 @@ DOMAIN-SUFFIX,apple.news
 ^http://(www.)?google.cn https://www.google.com 302
 
 [Script]
-vsco = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vsco.json, pattern=^https:\/\/api\.revenuecat\.com\/v1\/receipts$,requires-body=true,timeout=10,enable=true
+vsco = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vsco.json, pattern=^https:\/\/api\.revenuecat\.com\/v1\/subscribers\/139535280,requires-body=true,timeout=10,enable=true
 [MITM]
 hostname = api.revenuecat.com
 ca-passphrase = Shadowrocket
