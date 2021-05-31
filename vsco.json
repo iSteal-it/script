@@ -1,39 +1,43 @@
 var obj = JSON.parse($response.body);
 
 obj={
-  "request_date": "2021-05-30T14:13:53Z",
-  "request_date_ms": 1622384033127,
-  "subscriber": {
-    "entitlements": {
-      "membership": {
-        "expires_date": "2021-06-06T03:34:30Z",
-        "grace_period_expires_date": null,
-        "product_identifier": "VSCOANNUAL",
-        "purchase_date": "2021-05-30T03:34:30Z"
+  "request_date_ms" : 1622445760393,
+  "request_date" : "2021-05-31T07:22:40Z",
+  "subscriber" : {
+    "non_subscriptions" : {
+
+    },
+    "first_seen" : "2021-05-31T07:18:40Z",
+    "original_application_version" : "19615",
+    "other_purchases" : {
+
+    },
+    "management_url" : "itms-apps://apps.apple.com/account/subscriptions",
+    "subscriptions" : {
+      "VSCOANNUAL" : {
+        "is_sandbox" : false,
+        "period_type" : "normal",
+        "billing_issues_detected_at" : null,
+        "unsubscribe_detected_at" : null,
+        "expires_date" : "2090-07-16T12:15:53Z",
+        "grace_period_expires_date" : null,
+        "original_purchase_date" : "2019-07-02T12:15:54Z",
+        "purchase_date" : "2019-07-02T12:15:53Z",
+        "store" : "app_store"
       }
     },
-    "first_seen": "2021-05-17T02:24:24Z",
-    "last_seen": "2021-05-30T14:12:25Z",
-    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
-    "non_subscriptions": {},
-    "original_app_user_id": "",
-    "original_application_version": "21802",
-    "original_purchase_date": "2021-05-30T14:08:30Z",
-    "other_purchases": {},
-    "subscriptions": {
-      "VSCOANNUAL": {
-        "billing_issues_detected_at": null,
-        "expires_date": "2021-06-06T03:34:30Z",
-        "grace_period_expires_date": null,
-        "is_sandbox": false,
-        "original_purchase_date": "2021-05-30T03:34:31Z",
-        "ownership_type": "PURCHASED",
-        "period_type": "trial",
-        "purchase_date": "2021-05-30T03:34:30Z",
-        "store": "app_store",
-        "unsubscribe_detected_at": "2021-05-30T07:49:07Z"
+    "entitlements" : {
+      "membership" : {
+        "grace_period_expires_date" : null,
+        "purchase_date" : "2020-11-05T07:03:11Z",
+        "product_identifier" : "VSCOANNUAL",
+        "expires_date" : "2090-12-05T07:03:11Z"
       }
-    }
+    },
+    "original_purchase_date" : "2020-12-28T17:41:34Z",
+    "original_app_user_id" : "139535280",
+    "last_seen" : "2021-05-31T07:18:40Z"
   }
 }
+
 $done({body: JSON.stringify(obj)});
