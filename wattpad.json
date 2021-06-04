@@ -1,0 +1,32 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "request_date": "2021-06-04T18:09:14Z",
+  "request_date_ms": 1622830154566,
+  "subscriber": {
+    "entitlements": {},
+    "first_seen": "2021-06-04T18:08:07Z",
+    "last_seen": "2021-06-04T18:08:07Z",
+    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
+    "non_subscriptions": {},
+    "original_app_user_id": "323105825",
+    "original_application_version": "9.16.1.0",
+    "original_purchase_date": "2021-06-04T18:05:08Z",
+    "other_purchases": {},
+    "subscriptions": {
+      "1_YEAR_WP_Premium": {
+        "billing_issues_detected_at": null,
+        "expires_date": "2021-06-11T18:09:03Z",
+        "grace_period_expires_date": null,
+        "is_sandbox": false,
+        "original_purchase_date": "2021-06-04T18:09:04Z",
+        "ownership_type": "PURCHASED",
+        "period_type": "trial",
+        "purchase_date": "2021-06-04T18:09:03Z",
+        "store": "app_store",
+        "unsubscribe_detected_at": null
+      }
+    }
+  }
+}
+$done({body: JSON.stringify(obj)});
