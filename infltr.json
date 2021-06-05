@@ -1,27 +1,42 @@
 var obj = JSON.parse($response.body);
 
 obj={
-  "result" : [
-    {
-      "promoEndDate" : 1504945020000,
-      "state" : "live",
-      "parseId" : "AvBWGM8W9l",
-      "idIAP" : "com.Yooshr.infltr.everythingForever",
-      "percentOff" : 50
+  "request_date_ms" : 1622883139755,
+  "request_date" : "2021-06-05T08:52:19Z",
+  "subscriber" : {
+    "non_subscriptions" : {
+
     },
-    {
-      "state" : "live",
-      "parseId" : "gebfdTQiRY",
-      "idIAP" : "com.Yooshr.infltr.unlimitedCustomFilters"
+    "first_seen" : "2021-06-05T08:34:39Z",
+    "original_application_version" : "2335",
+    "other_purchases" : {
+
     },
-    {
-      "promoEndDate" : 1502357520000,
-      "state" : "live",
-      "parseId" : "w4zmECxL2z",
-      "idIAP" : "com.Yooshr.infltr.proSettings",
-      "percentOff" : 20
-    }
-  ]
+    "management_url" : "itms-apps://apps.apple.com/account/subscriptions",
+    "subscriptions" : {
+      "com.Yooshr.infltr.subscriptionPremium.Yearly" : {
+        "is_sandbox" : false,
+        "period_type" : "normal",
+        "billing_issues_detected_at" : null,
+        "unsubscribe_detected_at" : null,
+        "expires_date" : "2030-02-18T07:52:54Z",
+        "original_purchase_date" : "2020-02-11T07:52:55Z",
+        "purchase_date" : "2020-02-11T07:52:54Z",
+        "store" : "app_store"
+      }
+    },
+    "entitlements" : {
+      "com.Yooshr.infltr.subscriptionPremium" : {
+        "expires_date" : "2030-02-18T07:52:54Z",
+        "product_identifier" : "com.Yooshr.infltr.subscriptionPremium.Yearly",
+        "purchase_date" : "2020-02-11T07:52:54Z"
+      }
+    },
+    "original_purchase_date" : "2021-06-05T08:33:48Z",
+    "original_app_user_id" : "$RCAnonymousID:f7a56280f00347a783d9fc4f75f215af",
+    "last_seen" : "2021-06-05T08:34:39Z"
+  }
 }
+
 
 $done({body: JSON.stringify(obj)});
