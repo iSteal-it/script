@@ -1,0 +1,26 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "result" : [
+    {
+      "promoEndDate" : 1504945020000,
+      "state" : "live",
+      "parseId" : "AvBWGM8W9l",
+      "percentOff" : 50,
+      "idIAP" : "com.Yooshr.infltr.everythingForever"
+    },
+    {
+      "state" : "live",
+      "parseId" : "gebfdTQiRY",
+      "idIAP" : "com.Yooshr.infltr.unlimitedCustomFilters"
+    },
+    {
+      "promoEndDate" : 1502357520000,
+      "state" : "live",
+      "parseId" : "w4zmECxL2z",
+      "percentOff" : 20,
+      "idIAP" : "com.Yooshr.infltr.proSettings"
+    }
+  ]
+}
+$done({body: JSON.stringify(obj)});
