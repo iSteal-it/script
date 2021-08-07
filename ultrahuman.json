@@ -6,7 +6,7 @@ obj={
   "subscriber": {
     "entitlements": {
       "Premium": {
-        "expires_date": "2021-08-14T11:54:10Z",
+        "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "product_identifier": "com.ultrahuman.ios.yearly",
         "purchase_date": "2021-08-07T11:54:10Z"
