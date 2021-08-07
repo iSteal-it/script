@@ -1,0 +1,39 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "request_date": "2021-08-07T12:00:02Z",
+  "request_date_ms": 1628337602261,
+  "subscriber": {
+    "entitlements": {
+      "Premium": {
+        "expires_date": "2021-08-14T11:54:10Z",
+        "grace_period_expires_date": null,
+        "product_identifier": "com.ultrahuman.ios.yearly",
+        "purchase_date": "2021-08-07T11:54:10Z"
+      }
+    },
+    "first_seen": "2021-08-07T10:54:34Z",
+    "last_seen": "2021-08-07T10:54:34Z",
+    "management_url": "itms-apps://apps.apple.com/account/subscriptions",
+    "non_subscriptions": {},
+    "original_app_user_id": "$RCAnonymousID:d36d29e3ac4942b18581e1aeace7902d",
+    "original_application_version": "1",
+    "original_purchase_date": "2021-08-07T10:53:41Z",
+    "other_purchases": {},
+    "subscriptions": {
+      "com.ultrahuman.ios.yearly": {
+        "billing_issues_detected_at": null,
+        "expires_date": "2021-08-14T11:54:10Z",
+        "grace_period_expires_date": null,
+        "is_sandbox": false,
+        "original_purchase_date": "2021-08-07T11:54:11Z",
+        "ownership_type": "PURCHASED",
+        "period_type": "trial",
+        "purchase_date": "2021-08-07T11:54:10Z",
+        "store": "app_store",
+        "unsubscribe_detected_at": "2021-08-07T12:00:01Z"
+      }
+    }
+  }
+}
+$done({body: JSON.stringify(obj)});
