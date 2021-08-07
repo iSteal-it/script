@@ -23,7 +23,7 @@ obj={
     "subscriptions": {
       "com.ultrahuman.ios.yearly": {
         "billing_issues_detected_at": null,
-        "expires_date": "2021-08-14T11:54:10Z",
+        "expires_date": "2099-12-01T03:51:32Z",
         "grace_period_expires_date": null,
         "is_sandbox": false,
         "original_purchase_date": "2021-08-07T11:54:11Z",
