@@ -1,0 +1,7 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "is_valid": "Y",
+  "subscr_msg": "Active"
+}
+$done({body: JSON.stringify(obj)});
