@@ -59,7 +59,7 @@ DOMAIN-SUFFIX,apple.news
 ^http://(www.)?google.cn https://www.google.com 302
 
 [Script]
-ultrahuman = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/watchmaker.json, pattern=https:\/\/colorfrenzy\.herokuapp\.com\/verifyReceipt$,requires-body=true,timeout=10,enable=true
+ultrahuman = type=http-response, script-path=https://raw.githubusercontent.com/iSteal-it/script/main/watchmaker.json, pattern=^https:\/\/colorfrenzy\.herokuapp\.com\/verifyReceipt,requires-body=true,timeout=10,enable=true
 [MITM]
 hostname = colorfrenzy.herokuapp.com
 ca-passphrase = Shadowrocket
