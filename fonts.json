@@ -1,0 +1,9 @@
+var obj = JSON.parse($response.body);
+
+obj={
+  "result": {
+    "status": "subscribed",
+    "expiration_date": 1629308633000
+  }
+}
+$done({body: JSON.stringify(obj)});
