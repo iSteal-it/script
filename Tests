@@ -59,8 +59,8 @@ DOMAIN-SUFFIX,apple.news
 ^http://(www.)?google.cn https://www.google.com 302
 
 [Script]
-infltr2 = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/infltrRev.json,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),max-size=131072,requires-body=true,timeout=10,enable=true
-infltr1 = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/InfltrInfltr.json,pattern=^https:\/\/us-central1-infltr\.cloudfunctions\.net\/verifySubscription,max-size=131072,requires-body=true,timeout=10,enable=true
+infltr2 = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/infltrRev.js,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$),max-size=131072,requires-body=true,timeout=10,enable=true
+infltr1 = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/InfltrInfltr.js,pattern=^https:\/\/us-central1-infltr\.cloudfunctions\.net\/verifySubscription,max-size=131072,requires-body=true,timeout=10,enable=true
 
 [MITM]
 hostname = api.revenuecat.com,*.us-central1-infltr.cloudfunctions.net
