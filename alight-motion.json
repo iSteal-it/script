@@ -17,14 +17,12 @@ obj= {
         "benefits": [
 
           "RemoveWatermark",
-
           "MemberEffects",
-
           "ProjectPackageSharing",
-
           "FutureMemberFeatures",
-
-          "AdvancedEasing"
+          "AdvancedEasing",
+          "CameraObjects",
+          "LayerParenting"
 
         ],
 
@@ -34,7 +32,7 @@ obj= {
 
         "autoRenewing": true,
 
-        "orderNumber": "iSteal.it & telegram:@AhmedoPlus",
+        "orderNumber": "iSteal.it & telegram:@AhmedoPlus 10",
 
         "productId": "com.alightcreative.motion.sub.yearly",
 
@@ -48,7 +46,7 @@ obj= {
 
         "valid": true,
 
-        "linkStatus": "linked-nologin"
+        "linkStatus": "linked-current"
 
       }
 
