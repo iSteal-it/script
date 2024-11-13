@@ -563,7 +563,7 @@ VivaCut = type=http-response,script-path=https://N9dev-dev.github.io/SL/scripts/
 funimate = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Funimate.json,pattern=^https:\/\/api\.funimate\.com\/users\/me,max-size=131072,requires-body=true,timeout=10,enable=true
 Photomath =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photomath.json,pattern=^https:\/\/lapi\.photomath\.net\/v4\/me,max-size=131072,requires-body=true,timeout=10,enable=true
 Photoshop =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Photoshop.json,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,max-size=131072,requires-body=true,timeout=10,enable=true
-Lightroom =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/Lightroom.json,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts,max-size=131072,requires-body=true,timeout=10,enable=true
+LightRoom=type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts*,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/lightroom.js
 Djay = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/djay.json,pattern=^https:\/\/app\.algoriddim\.com\/api\/v1\/validate-receipt,max-size=131072,requires-body=true,timeout=10,enable=true
 Vllo = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vllo.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,max-size=131072,requires-body=true,timeout=10,enable=true
 vizmato = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/vizmato.json,pattern=^https:\/\/web\.vizmato\.com\/itunesreceipt_v5\.php,max-size=131072,requires-body=true,timeout=10,enable=true
@@ -575,5 +575,5 @@ unfold =type=http-response,script-path=https://raw.githubusercontent.com/iSteal-
 mosaic = type=http-response,script-path=https://raw.githubusercontent.com/iSteal-it/script/main/mosaic.json,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=true,timeout=10,enable=true
 
 [MITM]
-hostname = api-account.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,lcs-mobile-cops.adobe.io,api.revenuecat.com,app.algoriddim.com,buy.itunes.apple.com,web.vizmato.com,api.reface.video,api.revenuecat.com,api.busuu.com,api.calm.com,www.calm.com,api.unfold.app
+hostname = api-account.kinemasters.com,us-central1-alight-creative.cloudfunctions.net,api.picsart.com,api.funimate.com,lapi.photomath.net,photos.adobe.io,api.revenuecat.com,app.algoriddim.com,buy.itunes.apple.com,web.vizmato.com,api.reface.video,api.revenuecat.com,api.busuu.com,api.calm.com,www.calm.com,api.unfold.app
 enable = true
